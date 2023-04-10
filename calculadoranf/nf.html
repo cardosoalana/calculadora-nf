@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Nota Fiscal</title>
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>Calculadora de Nota Fiscal</h1>
+	<form>
+		<label for="produto1">Produto 1:</label>
+		<input type="text" id="produto1" name="produto1_nome" placeholder="Nome do produto">
+		<input type="number" id="produto1_valor" name="produto1_valor" placeholder="Valor unitário">
+		<input type="number" id="produto1_quantidade" name="produto1_quantidade" placeholder="Quantidade">
+		<br><br>
+
+		<label for="produto2">Produto 2:</label>
+		<input type="text" id="produto2" name="produto2_nome" placeholder="Nome do produto">
+		<input type="number" id="produto2_valor" name="produto2_valor" placeholder="Valor unitário">
+		<input type="number" id="produto2_quantidade" name="produto2_quantidade" placeholder="Quantidade">
+		<br><br>
+
+		<label for="produto3">Produto 3:</label>
+		<input type="text" id="produto3" name="produto3_nome" placeholder="Nome do produto">
+		<input type="number" id="produto3_valor" name="produto3_valor" placeholder="Valor unitário">
+		<input type="number" id="produto3_quantidade" name="produto3_quantidade" placeholder="Quantidade">
+		<br><br>
+
+		<label for="produto4">Produto 4:</label>
+		<input type="text" id="produto4" name="produto4_nome" placeholder="Nome do produto">
+		<input type="number" id="produto4_valor" name="produto4_valor" placeholder="Valor unitário">
+		<input type="number" id="produto4_quantidade" name="produto4_quantidade" placeholder="Quantidade">
+		<br><br>
+
+		<label for="produto5">Produto 5:</label>
+		<input type="text" id="produto5" name="produto5_nome" placeholder="Nome do produto">
+		<input type="number" id="produto5_valor" name="produto5_valor" placeholder="Valor unitário">
+		<input type="number" id="produto5_quantidade" name="produto5_quantidade" placeholder="Quantidade">
+		<br><br>
+
+		<button type="button" onclick="calcularNotaFiscal()">Calcular Nota Fiscal</button>
+	</form>
+
+	<h2>Resultado:</h2>
+	<p id="resultado"></p>
+</body>
+</html>
