@@ -1,4 +1,14 @@
 function calcularNotaFiscal() {
+	if (!validarCampos()) {
+		var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+		myModal.show();
+		return;
+	}
+
+	
+	document.querySelector(".produto").style.display = "none";
+	document.querySelector("#resultado-div").style.display = "block";
+
 	// Obter os valores dos campos do formulário
 	var produto1_nome = document.getElementById("produto1").value;
 	var produto1_valor = Number(document.getElementById("produto1_valor").value);
@@ -59,4 +69,27 @@ function calcularNotaFiscal() {
 	resultado.innerHTML += "Valor total do " + produto3_nome + ": R$" + produto3_total.toFixed(2) + "<br>";
 	resultado.innerHTML += "Valor total do " + produto4_nome + ": R$" + produto4_total.toFixed(2) + "<br>";
 	resultado.innerHTML += "Valor total do " + produto5_nome + ": R$" + produto5_total.toFixed(2) + "<br><br>";
-	resultado.innerHTML += "Valor total da nota fiscal: R$" + nota}
+	resultado.innerHTML += "Valor total da nota fiscal: R$" + nota
+	
+	return;
+}
+
+function showResultado() {
+}
+
+function showCalculo() {
+	document.querySelector(".produto").style.display = "block";
+	document.querySelector("#resultado-div").style.display = "none";
+}
+
+function validarCampos() {
+	var inputs = document.getElementsByTagName("input");
+
+	for (var i = 0; i < inputs.length; i++) {
+		if (inputs[i].value == "") {
+		return false;
+		}
+	}
+
+	return true;
+}
