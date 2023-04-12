@@ -1,0 +1,74 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #234d20;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #f0f7da;
+}
+
+.container-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 20px;
+    border: solid white 2px;
+    background-color: white;
+    padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+}
+
+.product-text {
+    font-size: 18px;
+    color: #234d20;
+    font-weight: 100;
+    margin-bottom: 1%;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+}
+
+.input:hover {
+    transition: 2s, 2s, 2s;
+    border: none;
+    border-bottom: solid #234d20 2px;
+    outline: none;
+}
+
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 20px;
+    border: solid #36802d 2px;
+    background-color: white;
+    color: #234d20;
+    padding: 1%;
+    outline: none;
+}
+
+.button:hover {
+    border: solid #36802d 2px;
+    background-color: #36802d;
+    color: white;
+    transition: 1s;
+}
+
+.resultado-div {
+    display: none;
+}
+
+p {
+    color: black;
+}
